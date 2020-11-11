@@ -1,0 +1,134 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: Bebas;
+    src: url("/fonts/BebasNeue-Regular.ttf")
+}
+.wrapper {
+    max-width: 400px;
+    min-height: 400px;
+    margin: 30px auto;
+    border: 10px solid #EBEBEB;
+    position: relative;
+}
+.wrap {
+
+}
+.radio {
+    display: none;
+}
+.fake {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 3px solid #34648e;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fake::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #0294bf;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transform: .2s;
+    border-radius: 50%;
+}
+.radio:checked + .fake::before {
+    opacity: 1;
+}
+.license::after{
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 1px;
+    background-color: #000;
+    left: 15px;
+}
+.license-item {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+.license-item:hover, .active {
+    background-color: #ebf4f7;
+    border: 1px solid #bedbe5;
+    padding: 14px 0;
+}
+.license-item_plan{
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+.license-item_cost{
+    
+    color: #797979;
+}
+
+.wrap {
+    position: relative;
+}
+.number{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.number::after{
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 1px;
+    background-color: #000;
+    left: 15px;
+    bottom: 165px;
+}
+.number_span {
+    margin-right: 10px;
+}
+.number_input {
+    width: 40px;
+}
+.total_amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn {
+    box-sizing: border-box;
+    background-color: #33a845; 
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    color:#fff;
+    outline: none;
+    margin: 5px;
+    text-transform: uppercase;
+}
+.btn:hover {
+    transform: scale(1.1)
+}
+.text, .selected {
+    margin: 15px;
+}
+.text, .license-item_plan {
+    color: #797979;
+    font-family: Bebas;
+    font-size: 22px;
+}
+.text_price{
+    color: #3388a8;
+}
+.selected {
+    color: #569cb6;
+}

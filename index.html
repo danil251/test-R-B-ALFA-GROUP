@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="license">
+                <div class="license-item">
+                    <label class="wrap">
+                        <input type="radio" name="#1" value=13 class="radio" id="radio">
+                        <span class="fake"></span>
+                        <span class="license-item_plan">License plan #1</span>
+                    </label>
+                    <span class="license-item_cost">$13 per license</span>
+                </div>
+
+                <div class="license-item">
+                    <label class="wrap">
+                        <input type="radio" name="#2" value=22 class="radio" id="radio">
+                        <span class="fake"></span>
+                        <span class="license-item_plan">License plan #2</span>
+                    </label>
+                    <span class="license-item_cost">$22 per license</span>
+                </div>
+
+                <div class="license-item">
+                    <label class="wrap">
+                        <input type="radio" name="#3" value=34 class="radio" id="radio">
+                        <span class="fake"></span>
+                        <span class="license-item_plan">License plan #3</span>
+                    </label>
+                    <span class="license-item_cost">$34 per license</span>
+                </div>
+
+            </div>
+            <div class="number">
+                <span class="number_span">Number of license:</span>
+                <input type="number" class="number_input" min="1" max="100" >
+            </div>
+            <div class="total">
+                <div class="total_amount">
+                    <span class="text"> TOTAL: <span class="text_price"></span></span>
+                    <button class="btn" >Buy now</button>
+                    <span class="selected">Selected plan: <span class="selected_plan"></span></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./script/script.js"></script>
+
+</html>
